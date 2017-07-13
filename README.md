@@ -46,7 +46,7 @@ import component from './app.js';
 
 **In your application**
 ```js
-import component from './app.js';
+import component from 'vue-loader!vuejs-loader!./app.js';
 ```
 
 ## How it works
