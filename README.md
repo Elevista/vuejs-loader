@@ -1,5 +1,5 @@
 # Vue.js Loader
-A loader for webpack that merge separate js,css,html files to single vue component file(.vue)
+A wrapper loader of vue-loader for .js file
 
  [![npm package](https://img.shields.io/npm/v/vue-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-loader)
 
@@ -10,7 +10,7 @@ npm i vuejs-loader
 ```
 
 ## When do I need it?
-If you want to use vue-loader but want to separate html,css,js files and do not want to make .vue file.
+If you want to use vue-loader but do not want to make .vue file and want to separate html,css,js files.
 
 ## Usage
 Use the loader either via your webpack config or inline.
