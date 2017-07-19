@@ -4,9 +4,8 @@ A loader for webpack that merge separate js,css,html files to single vue compone
  [![npm package](https://img.shields.io/npm/v/vue-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-loader)
 
 ## Install
-**requires vue-loader**
+**requires vue-loader installed**
 ```bash
-npm i vue-loader
 npm i vuejs-loader
 ```
 
@@ -15,8 +14,6 @@ If you want to use vue-loader but want to separate html,css,js files and do not 
 
 ## Usage
 Use the loader either via your webpack config or inline.
-
-Must be used with vue-loader.
 
 ### Via webpack config
 
@@ -29,7 +26,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 include: path.resolve(__dirname, 'YOUR APP PATH'),
-                loader: 'vue-loader!vuejs-loader'
+                loader: 'vuejs-loader'
             },
         ],
     }
@@ -46,7 +43,7 @@ import component from './app.js';
 
 **In your application**
 ```js
-import component from 'vue-loader!vuejs-loader!./app.js';
+import component from 'vuejs-loader!./app.js';
 ```
 
 ## How it works
@@ -68,7 +65,12 @@ export default {
     styleUrl: './app.css',
 };
 ```
-After loaded by vuejs-loader become
+```js
+import component from 'vuejs-loader!./app.js';
+```
+imported component object equals below
+
+**app.vue**
 ```html
 <script>
 export default {
@@ -80,6 +82,10 @@ export default {
 <template src="./app.html"></template>
 <style scoped src="./app.css"></template>
 ```
+```js
+import component from 'vue-loader!./app.vue';
+```
+
 
 ## License
 The MIT License (MIT)
