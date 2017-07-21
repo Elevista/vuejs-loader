@@ -1,8 +1,8 @@
-const path = require('path'), loaderUtils = require('loader-utils');
-const vuejsLoaderPath = path.resolve(__dirname, './vuejs-loader.js');
+const path = require('path'), loaderUtils = require('loader-utils')
+const vuejsLoaderPath = path.resolve(__dirname, './vuejs-loader.js')
 module.exports = function () {
-	let request = loaderUtils.getRemainingRequest(this);
-	let importString = loaderUtils.stringifyRequest(this, '!!vue-loader!' + vuejsLoaderPath + '!' + request);
-	return `import vueComponent from ${importString};\n`
-		+ 'export default vueComponent;';
-};
+  let request = loaderUtils.getRemainingRequest(this)
+  let importString = loaderUtils.stringifyRequest(this, '!!vue-loader!' + vuejsLoaderPath + '!' + request)
+  return `import vueComponent from ${importString};\n`
+    + 'export default vueComponent;'
+}
