@@ -2,6 +2,8 @@
 A wrapper loader of vue-loader for .js file
 
  [![npm package](https://img.shields.io/npm/v/vue-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-loader)
+ [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 
 ## Install
 **requires vue-loader installed**
