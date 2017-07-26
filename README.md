@@ -68,7 +68,7 @@ export default {
 }
 ```
 ```js
-import component from 'vuejs-loader!./app.js';
+import component from 'vuejs-loader!./app.js'
 ```
 imported component object equals below
 
@@ -85,7 +85,7 @@ export default {
 <style scoped src="./app.css"></template>
 ```
 ```js
-import component from 'vue-loader!./app.vue';
+import component from 'vue-loader!./app.vue'
 ```
 
 
