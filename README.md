@@ -21,23 +21,23 @@ Use the loader either via your webpack config or inline.
 
 **webpack.config.js**
 ```js
-const path = require('path');
+const path = require('path')
 module.exports = {
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                include: path.resolve(__dirname, 'YOUR APP PATH'),
-                loader: 'vuejs-loader'
-            },
-        ],
-    }
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        include: path.resolve(__dirname, 'YOUR APP PATH'),
+        loader: 'vuejs-loader'
+      },
+    ],
+  }
 }
 ```
 
 **In your application**
 ```js
-import component from './app.js';
+import component from './app.js'
 ```
 
 
@@ -45,7 +45,7 @@ import component from './app.js';
 
 **In your application**
 ```js
-import component from 'vuejs-loader!./app.js';
+import component from 'vuejs-loader!./app.js'
 ```
 
 ## How it works
@@ -62,10 +62,10 @@ assets/
 **app.js**
 ```js
 export default {
-    name: 'app',
-    templateUrl: './app.html',
-    styleUrl: './app.css',
-};
+  name: 'app',
+  templateUrl: './app.html',
+  styleUrl: './app.css',
+}
 ```
 ```js
 import component from 'vuejs-loader!./app.js';
@@ -76,10 +76,10 @@ imported component object equals below
 ```html
 <script>
 export default {
-    name: 'app',
-    templateUrl: './app.html',
-    styleUrl: './app.css',
-};
+  name: 'app',
+  templateUrl: './app.html',
+  styleUrl: './app.css',
+}
 </script>
 <template src="./app.html"></template>
 <style scoped src="./app.css"></template>
