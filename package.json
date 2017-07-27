@@ -1,6 +1,6 @@
 {
 	"name": "vuejs-loader",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "A wrapper loader of vue-loader for .js file",
 	"main": "index.js",
 	"scripts": {
@@ -18,6 +18,6 @@
 		"loader-utils": "^1.1.0"
 	},
 	"peerDependencies": {
-		"vuejs-loader": "*"
+		"vue-loader": "*"
 	}
 }
