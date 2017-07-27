@@ -1,7 +1,7 @@
 # Vue.js Loader
 A wrapper loader of [vue-loader](https://npmjs.com/package/vue-loader) for .js file
 
- [![npm package](https://img.shields.io/npm/v/vuejs-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-loader)
+ [![npm package](https://img.shields.io/npm/v/vuejs-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/vuejs-loader)
  [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 
