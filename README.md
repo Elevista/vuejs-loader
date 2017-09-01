@@ -63,8 +63,8 @@ assets/
 ```js
 export default {
   name: 'app',
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  templateSrc: './app.html',
+  styleSrc: './app.css',
 }
 ```
 ```js
@@ -77,8 +77,8 @@ imported component object equals below
 <script>
 export default {
   name: 'app',
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  templateSrc: './app.html',
+  styleSrc: './app.css',
 }
 </script>
 <template src="./app.html"></template>
