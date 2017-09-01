@@ -10,10 +10,10 @@ module.exports = function (source) {
       }
     }
   }).get('expression.right.properties')
-  let templateUrl = properties.find({key: {name: 'templateUrl'}}).get('value.value').value()
-  let styleUrl = properties.find({key: {name: 'styleUrl'}}).get('value.value').value()
+  let templateSrc = properties.find({key: {name: 'templateSrc'}}).get('value.value').value()
+  let styleSrc = properties.find({key: {name: 'styleSrc'}}).get('value.value').value()
   let ret = `<script>\n${source}\n</script>`
-  if (templateUrl) ret += `\n<template src="${templateUrl}"></template>`
-  if (styleUrl) ret += `\n<style scoped src="${styleUrl}"></style>`
+  if (templateSrc) ret += `\n<template src="${templateSrc}"></template>`
+  if (styleSrc) ret += `\n<style scoped src="${styleSrc}"></style>`
   return ret
 }

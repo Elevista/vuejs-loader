@@ -1,6 +1,6 @@
 {
 	"name": "vuejs-loader",
-	"version": "2.0.3",
+	"version": "2.1.0",
 	"description": "A wrapper loader of vue-loader for .js file",
 	"main": "index.js",
 	"scripts": {
